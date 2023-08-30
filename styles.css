@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://imgur.com/4oZEMIN.jpg");
+  background-repeat: repeat; /* Set background to repeat */
+  background-size: cover; /* Adjust background size as needed */
+}
+
+canvas {
+  background: #343434;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+  canvas {
+    width: 80%; /* Adjust canvas width for desktop */
+    height: auto;
+    /* Add any other styling adjustments for desktop layout */
+  }
+}
+#container {
+  text-align: center;
+  color: white;
+}
+#game-title {
+  margin-bottom: 20px;
+  color: white;
+}
+#instructions {
+  margin-top: 18px;
+}
+#instructions ul {
+  list-style: none;
+}
+
+#joystick {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
